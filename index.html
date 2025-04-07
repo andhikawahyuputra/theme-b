@@ -704,10 +704,10 @@
           let postId = img.dataset.postId; 
 
           if (img.src.includes("heart.png")) {
-              img.src = "img/heart-fill.png";
+              img.src = "img/rsvp-icon/heart-fill.png";
               localStorage.setItem(`liked_${postId}`, "true"); 
           } else {
-              img.src = "img/heart.png";
+              img.src = "img/rsvp-icon/heart.png";
               localStorage.removeItem(`liked_${postId}`);
           }
       }
